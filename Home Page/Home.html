@@ -5,14 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./Styles.css" />
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script>
-      $(document).ready(function(){
-        $('#navigation__toggle-icon').click(function(){
-          $('.navigation__list').toggleClass('show')
-        })
-      })
-    </script> -->
     <title>Cocktail</title>
   </head>
   <body>
@@ -35,7 +27,6 @@
       </section>
       <!-- Navigation Bar -->
       <nav class="navigation">
-        <!-- <div class="navigation__toggle"><img id="navigation__toggle-icon" src="../assets/icons/icon.png" alt=""></div> -->
         <ul class="navigation__list">
           <li class="navigation__item">
             <a class="navigation__link" href=""
@@ -91,12 +82,11 @@
                 class="navigation-icon"
                 src="../assets/icons/basket.png"
                 alt="basket"
-                
             /></a>
           </li>
         </ul>
       </nav>
-      
+
       <!-- Banner -->
       <section class="banner">
         <div class="banner__img--container">
@@ -114,6 +104,7 @@
           </h4>
         </div>
       </section>
+
       <!-- Best Seller -->
       <section class="best-sellers">
         <h1 class="best-seller__title">Our best sellers</h1>
@@ -172,6 +163,7 @@
           </div>
         </div>
       </section>
+
       <!-- About us -->
       <section class="about-us">
         <h3 class="about-us__subtitle">/de · swa/</h3>
@@ -180,6 +172,7 @@
         </h1>
         <a class="about-us__link" href="#">About us</a>
       </section>
+
       <!-- our portfolio -->
       <section class="portfolio">
         <div class="portfolio__row">
@@ -260,6 +253,7 @@
           />
         </div>
       </section>
+
       <!-- rich and fruity-->
       <section class="rich">
         <div class="rich__fruity--container">
@@ -283,6 +277,7 @@
           />
         </div>
       </section>
+
       <!-- Ingredients -->
       <section class="ingredients">
         <h2 class="ingredients__title">Ingredients</h2>
@@ -294,47 +289,59 @@
         </p>
         <a class="ingredients__btn" href="">Ingredient glossAry</a>
         <div class="ingredient">
-          <img
-            class="ingredient__img"
-            src="../assets/icons/element.png"
-            alt=""
-          />
-          <img
-            class="ingredient__img"
-            src="../assets/icons/element (1).png"
-            alt=""
-          />
-          <img
-            class="ingredient__img"
-            src="../assets/icons/element (3).png"
-            alt=""
-          />
-          <img
-            class="ingredient__img"
-            src="../assets/icons/element-5.png"
-            alt=""
-          />
-          <img
-            class="ingredient__img"
-            src="../assets/icons/element (2).png"
-            alt=""
-          />
-          <img
-            class="ingredient__img"
-            src="../assets/icons/element (4).png"
-            alt=""
-          />
+          <div class="ingredient__img--item">
+            <img
+              class="ingredient__img"
+              src="../assets/icons/element.png"
+              alt=""
+            />
+          </div>
+          <div class="ingredient__img--item">
+            <img
+              class="ingredient__img"
+              src="../assets/icons/element (1).png"
+              alt=""
+            />
+          </div>
+          <div class="ingredient__img--item">
+            <img
+              class="ingredient__img"
+              src="../assets/icons/element (3).png"
+              alt=""
+            />
+          </div>
+          <div class="ingredient__img--item">
+            <img
+              class="ingredient__img"
+              src="../assets/icons/element-5.png"
+              alt=""
+            />
+          </div>
+          <div class="ingredient__img--item">
+            <img
+              class="ingredient__img"
+              src="../assets/icons/element (2).png"
+              alt=""
+            />
+          </div>
+          <div class="ingredient__img--item">
+            <img
+              class="ingredient__img"
+              src="../assets/icons/element (4).png"
+              alt=""
+            />
+          </div>
         </div>
       </section>
-      <section class="rich" id="rich__copy">
-        <div class="rich__fruity--img">
+      <section class="enim">
+        <div class="enim__fruity--img">
           <img
-            class="rich__img"
+            class="enim__img"
             src="../assets/images/rich-fruity.png"
             alt=""
           />
         </div>
-        <div class="rich__fruity--container">
+        <div class="enim__fruity--container">
           <div class="fruity__container">
             <h4 class="fruity__subtitle">Learn</h4>
             <h3 class="fruity__title">Ut enim</h3>
@@ -348,16 +355,19 @@
           </div>
         </div>
       </section>
+
       <!-- Refer -->
       <section class="refer">
         <h3 class="refer__subtitle">Spread the word</h3>
         <h2 class="refer__title">Refer a friend</h2>
         <a class="refer__link" href="">Refer now</a>
       </section>
+
       <!-- Join us -->
       <section class="join-us">
         <h2 class="join-us__title">Join us @сocktail</h2>
       </section>
+
       <!-- Gallery -->
       <section class="gallery">
         <img class="gallery__img" src="../assets/images/IG photo.png" alt="" />
@@ -378,63 +388,85 @@
         />
       </section>
 
-      <footer class="footer">   
+      <footer class="footer">
         <div class="footer__container">
           <div class="footer__contact--container">
-          <h4 class="footer__title">Newsletter</h4>
-          <p class="footer__paragraph">Sign up to save 10% on your next order</p>
-          <img
-            class="contact__input--icon"
-            src="../assets/icons/Arrow 1.png"
-            alt=""
-          />
-          <input
-            class="contact__input--field"
-            type="email"
-            placeholder="Email Address"
-            name=""
-            id=""
-          />
-          <div class="contact__social-media">
-            <img class="social-media__icon" src="../assets/icons/instagram.png" alt="">
-            <img class="social-media__icon" src="../assets/icons/facebook.png" alt="">
-            <img class="social-media__icon" src="../assets/icons/pinteres.png" alt="">
-            <img class="social-media__icon" src="../assets/icons/twitter.png" alt="">
-            <img class="social-media__icon" src="../assets/icons/you_tube.png" alt="">
+            <h4 class="footer__title">Newsletter</h4>
+            <p class="footer__paragraph">
+              Sign up to save 10% on your next order
+            </p>
+            <img
+              class="contact__input--icon"
+              src="../assets/icons/Arrow 1.png"
+              alt=""
+            />
+            <input
+              class="contact__input--field"
+              type="email"
+              placeholder="Email Address"
+              name=""
+              id=""
+            />
+            <div class="contact__social-media">
+              <img
+                class="social-media__icon"
+                src="../assets/icons/instagram.png"
+                alt=""
+              />
+              <img
+                class="social-media__icon"
+                src="../assets/icons/facebook.png"
+                alt=""
+              />
+              <img
+                class="social-media__icon"
+                src="../assets/icons/pinteres.png"
+                alt=""
+              />
+              <img
+                class="social-media__icon"
+                src="../assets/icons/twitter.png"
+                alt=""
+              />
+              <img
+                class="social-media__icon"
+                src="../assets/icons/you_tube.png"
+                alt=""
+              />
+            </div>
+            <div class="footer__comments">
+              <p class="comment_logo">/de · swa/</p>
+              <p class="comment__expire-date">®2021 Сocktail</p>
+              <p class="comment__privacy">Privacy policy</p>
+              <p class="comment__privacy">Terms of use</p>
+              <p class="comment__privacy">AMASS</p>
+            </div>
           </div>
-          <div class="footer__comments">
-            <p class="comment_logo">/de · swa/</p>
-            <p class="comment__expire-date">®2021 Сocktail</p>
-            <p class="comment__privacy">Privacy policy</p>
-            <p class="comment__privacy">Terms of use</p>
-            <p class="comment__privacy">AMASS</p>
+          <div class="footer__pagination">
+            <ul class="pagination__column">
+              <li><h3 class="pagination__title">explore</h3></li>
+              <li class="pagination__link">Account</li>
+              <li class="pagination__link">Gift Card</li>
+              <li class="pagination__link">Refer a Friend</li>
+              <li class="pagination__link">Affiliates</li>
+              <li class="pagination__link">Corporate Gifting</li>
+            </ul>
+            <ul class="pagination__column">
+              <li><h3 class="pagination__title">Get Help</h3></li>
+              <li class="pagination__link">Shop</li>
+              <li class="pagination__link">FAQ</li>
+              <li class="pagination__link">Shipping & Returns</li>
+              <li class="pagination__link">Store Locator</li>
+            </ul>
+            <ul class="pagination__column">
+              <li><h3 class="pagination__title">Company</h3></li>
+              <li class="pagination__link">About</li>
+              <li class="pagination__link">Contact</li>
+              <li class="pagination__link">Blog</li>
+              <li class="pagination__link">Press</li>
+            </ul>
           </div>
         </div>
-        <div class="footer__pagination">
-          <ul class="pagination__column">
-            <li><h3 class="pagination__title">explore</h3></li>
-            <li class="pagination__link">Account</li>
-            <li class="pagination__link">Gift Card</li>
-            <li class="pagination__link">Refer a Friend</li>
-            <li class="pagination__link">Affiliates</li>
-            <li class="pagination__link">Corporate Gifting</li>
-          </ul>
-          <ul class="pagination__column">
-            <li><h3 class="pagination__title">Get Help</h3></li>
-            <li class="pagination__link">Shop</li>
-            <li class="pagination__link">FAQ</li>
-            <li class="pagination__link">Shipping & Returns</li>
-            <li class="pagination__link">Store Locator</li>
-          </ul>
-          <ul class="pagination__column">
-            <li><h3 class="pagination__title">Company</h3></li>
-            <li class="pagination__link">About</li>
-            <li class="pagination__link">Contact</li>
-            <li class="pagination__link">Blog</li>
-            <li class="pagination__link">Press</li>
-          </ul>
-        </div>
-        </div> 
       </footer>
     </main>
 
