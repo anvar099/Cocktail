@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./Styles.css" />
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <title>Cocktail</title>
   </head>
   <body>
@@ -17,7 +20,8 @@
           alt=""
         />
         <p class="notification-bar__paragraph">
-          Free domestic shipping on orders over $50 <a href="#">Learn more</a>
+          Free domestic shipping on orders over $50
+          <a class="bar__learn-more" href="#">Learn more</a>
         </p>
         <img
           class="notification-bar__arrow-icon"
@@ -28,6 +32,7 @@
       <!-- Navigation Bar -->
       <nav class="navigation">
         <ul class="navigation__list">
+          <li><div class="navigation__toggle"></div></li>
           <li class="navigation__item">
             <a class="navigation__link" href=""
               >Shop
@@ -96,18 +101,37 @@
             alt=""
           />
         </div>
-        <div class="banner__rich--text">
-          <h4 class="rich__subtitle">New arrival</h4>
-          <h1 class="rich__title">Lorem ipsum dolor sit amet</h1>
-          <h4 class="rich__subtitle--link-box">
-            <a class="rich__subtitle--link" href="#">Shop New</a>
-          </h4>
+        <div class="banner__rich">
+          <div class="banner__rich--text">
+            <h4 class="rich__subtitle">New arrival</h4>
+            <h1 class="rich__title">Lorem ipsum dolor sit amet</h1>
+            <h4 class="rich__subtitle--link-box">
+              <a class="rich__subtitle--link" href="#">Shop New</a>
+            </h4>
+          </div>
         </div>
       </section>
 
       <!-- Best Seller -->
       <section class="best-sellers">
-        <h1 class="best-seller__title">Our best sellers</h1>
+        <div class="best-seller__arrow">
+          <div class="seller__icon" onclick="side_slide(-1)">
+            <img
+              class="best-seller__arrow-icon"
+              src="../assets/icons/Arrow 2.png"
+              alt=""
+            />
+          </div>
+          <h1 class="best-seller__title">Our best sellers</h1>
+          <div class="seller__icon" onclick="side_slide(1)">
+            <img
+              class="best-seller__arrow-icon"
+              src="../assets/icons/Arrow 3.png"
+              alt=""
+            />
+          </div>
+        </div>
+
         <div class="best-sellers__grid">
           <div class="best-seller">
             <img
@@ -240,7 +264,7 @@
             />
           </div>
         </div>
-        <div class="ellipse__icon--row">
+        <!-- <div class="ellipse__icon--row">
           <img
             class="ellipse__icon"
             src="../assets/icons/Ellipse 19.png"
@@ -251,7 +275,7 @@
             src="../assets/icons/Ellipse 21.png"
             alt=""
           />
-        </div>
+        </div> -->
       </section>
 
       <!-- rich and fruity-->
@@ -287,49 +311,51 @@
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </p>
-        <a class="ingredients__btn" href="">Ingredient glossAry</a>
-        <div class="ingredient">
-          <div class="ingredient__img--item">
-            <img
-              class="ingredient__img"
-              src="../assets/icons/element.png"
-              alt=""
-            />
-          </div>
-          <div class="ingredient__img--item">
-            <img
-              class="ingredient__img"
-              src="../assets/icons/element (1).png"
-              alt=""
-            />
-          </div>
-          <div class="ingredient__img--item">
-            <img
-              class="ingredient__img"
-              src="../assets/icons/element (3).png"
-              alt=""
-            />
-          </div>
-          <div class="ingredient__img--item">
-            <img
-              class="ingredient__img"
-              src="../assets/icons/element-5.png"
-              alt=""
-            />
-          </div>
-          <div class="ingredient__img--item">
-            <img
-              class="ingredient__img"
-              src="../assets/icons/element (2).png"
-              alt=""
-            />
-          </div>
-          <div class="ingredient__img--item">
-            <img
-              class="ingredient__img"
-              src="../assets/icons/element (4).png"
-              alt=""
-            />
+        <div class="ingredients__reverse">
+          <a class="ingredients__btn" href="">Ingredient glossAry</a>
+          <div class="ingredient">
+            <div div class="ingredient__img--item">
+              <img
+                class="ingredient__img"
+                src="../assets/icons/element.png"
+                alt=""
+              />
+            </div>
+            <div class="ingredient__img--item">
+              <img
+                class="ingredient__img"
+                src="../assets/icons/element (1).png"
+                alt=""
+              />
+            </div>
+            <div class="ingredient__img--item">
+              <img
+                class="ingredient__img"
+                src="../assets/icons/element (3).png"
+                alt=""
+              />
+            </div>
+            <div class="ingredient__img--item">
+              <img
+                class="ingredient__img"
+                src="../assets/icons/element-5.png"
+                alt=""
+              />
+            </div>
+            <div class="ingredient__img--item">
+              <img
+                class="ingredient__img"
+                src="../assets/icons/element (2).png"
+                alt=""
+              />
+            </div>
+            <div class="ingredient__img--item">
+              <img
+                class="ingredient__img"
+                src="../assets/icons/element (4).png"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -389,82 +415,88 @@
       </section>
 
       <footer class="footer">
-        <div class="footer__container">
-          <div class="footer__contact--container">
-            <h4 class="footer__title">Newsletter</h4>
-            <p class="footer__paragraph">
-              Sign up to save 10% on your next order
-            </p>
-            <img
-              class="contact__input--icon"
-              src="../assets/icons/Arrow 1.png"
-              alt=""
-            />
-            <input
-              class="contact__input--field"
-              type="email"
-              placeholder="Email Address"
-              name=""
-              id=""
-            />
-            <div class="contact__social-media">
+        <div class="footer__row">
+          <div class="footer__container">
+            <div class="footer__contact--container">
+              <h4 class="footer__title">Newsletter</h4>
+              <p class="footer__paragraph">
+                Sign up to save 10% on your next order
+              </p>
               <img
-                class="social-media__icon"
-                src="../assets/icons/instagram.png"
+                class="contact__input--icon"
+                src="../assets/icons/Arrow 1.png"
                 alt=""
               />
-              <img
-                class="social-media__icon"
-                src="../assets/icons/facebook.png"
-                alt=""
+              <input
+                class="contact__input--field"
+                type="email"
+                placeholder="Email Address"
+                name=""
+                id=""
               />
-              <img
-                class="social-media__icon"
-                src="../assets/icons/pinteres.png"
-                alt=""
-              />
-              <img
-                class="social-media__icon"
-                src="../assets/icons/twitter.png"
-                alt=""
-              />
-              <img
-                class="social-media__icon"
-                src="../assets/icons/you_tube.png"
-                alt=""
-              />
+              <div class="contact__social-media">
+                <img
+                  class="social-media__icon"
+                  src="../assets/icons/instagram.png"
+                  alt=""
+                />
+                <img
+                  class="social-media__icon"
+                  src="../assets/icons/facebook.png"
+                  alt=""
+                />
+                <img
+                  class="social-media__icon"
+                  src="../assets/icons/pinteres.png"
+                  alt=""
+                />
+                <img
+                  class="social-media__icon"
+                  src="../assets/icons/twitter.png"
+                  alt=""
+                />
+                <img
+                  class="social-media__icon"
+                  src="../assets/icons/you_tube.png"
+                  alt=""
+                />
+              </div>
             </div>
-            <div class="footer__comments">
-              <p class="comment_logo">/de · swa/</p>
+            <div class="footer__pagination">
+              <ul class="pagination__column">
+                <li><h3 class="pagination__title">explore</h3></li>
+                <li class="pagination__link">Account</li>
+                <li class="pagination__link">Gift Card</li>
+                <li class="pagination__link">Refer a Friend</li>
+                <li class="pagination__link">Affiliates</li>
+                <li class="pagination__link">Corporate Gifting</li>
+              </ul>
+              <ul class="pagination__column">
+                <li><h3 class="pagination__title">Get Help</h3></li>
+                <li class="pagination__link">Shop</li>
+                <li class="pagination__link">FAQ</li>
+                <li class="pagination__link">Shipping & Returns</li>
+                <li class="pagination__link">Store Locator</li>
+              </ul>
+              <ul class="pagination__column">
+                <li><h3 class="pagination__title">Company</h3></li>
+                <li class="pagination__link">About</li>
+                <li class="pagination__link">Contact</li>
+                <li class="pagination__link">Blog</li>
+                <li class="pagination__link">Press</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__comments">
+            <div class="comment__row">
+              <p class="comment__logo">/de · swa/</p>
               <p class="comment__expire-date">®2021 Сocktail</p>
+            </div>
+            <div class="comment__row">
               <p class="comment__privacy">Privacy policy</p>
               <p class="comment__privacy">Terms of use</p>
               <p class="comment__privacy">AMASS</p>
             </div>
-          </div>
-          <div class="footer__pagination">
-            <ul class="pagination__column">
-              <li><h3 class="pagination__title">explore</h3></li>
-              <li class="pagination__link">Account</li>
-              <li class="pagination__link">Gift Card</li>
-              <li class="pagination__link">Refer a Friend</li>
-              <li class="pagination__link">Affiliates</li>
-              <li class="pagination__link">Corporate Gifting</li>
-            </ul>
-            <ul class="pagination__column">
-              <li><h3 class="pagination__title">Get Help</h3></li>
-              <li class="pagination__link">Shop</li>
-              <li class="pagination__link">FAQ</li>
-              <li class="pagination__link">Shipping & Returns</li>
-              <li class="pagination__link">Store Locator</li>
-            </ul>
-            <ul class="pagination__column">
-              <li><h3 class="pagination__title">Company</h3></li>
-              <li class="pagination__link">About</li>
-              <li class="pagination__link">Contact</li>
-              <li class="pagination__link">Blog</li>
-              <li class="pagination__link">Press</li>
-            </ul>
           </div>
         </div>
       </footer>
