@@ -27,7 +27,23 @@
   --text-font-family: "Montserrat-variable";
   --text-bold-font-family: "Montserrat";
   --text-font-size: 14px;
+  --text-mobile-font-size: 12px;
   --color: #ffffff;
+
+  --color-secondary: #bb6b1e;
+  --color-primary: #fffbf7;
+  --color-primary-dark: #d5ffd8;
+  --color-white: #fff;
+  --color-grey: #7d7d7d;
+  --color-grey-light: #cbcbcb;
+  --color-black: #000;
+  --font-normal: 1.4rem;
+  --font-title: 8rem;
+  --letter-spacing-normal: 0.1em;
+  --font-weight-normal: 500;
+  --font-weight-bold: 700;
+  --max-width: 1920px;
+  --app-height: 100%;
 }
 .main {
   height: 100%;
@@ -59,49 +75,88 @@
   margin: 0 40px;
 }
 /* Navigation */
-.navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  min-width: 100%;
-  min-height: 63px;
-}
-.navigation__logo {
+.nav {
+  height: 6.2rem;
   display: flex;
   align-items: center;
+  justify-content: center;
+  position: relative;
 }
-.navigation__list {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  align-items: center;
-  margin: 0 40px;
+.nav__check {
+  display: none;
 }
-.navigation__link {
+.nav__hamburger {
+  display: none;
+}
+.nav__logo-link {
+  z-index: 9999;
+}
+a {
   text-decoration: none;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 13px;
+}
+.nav__logo {
+  height: 2.8rem;
+  width: 14.1rem;
+  text-align: center;
+}
+.nav__item {
+  position: relative;
+}
+.nav__cart-mobile {
+  display: none;
+}
+.nav__item a {
+  font-family: "Montserrat";
   font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
   color: black;
-  font-family: var(--text-bold-font-family);
   letter-spacing: 0.1em;
-  margin: 0 15px 0 0;
+  text-transform: uppercase;
   display: flex;
   align-items: center;
 }
-.navigation__toggle {
-  display: none;
+.nav__bag-count {
+  font-size: 12px;
+  font-weight: var(--font-weight-bold);
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-white);
 }
-#busket-icon {
-  margin-right: 0;
+.nav__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  margin: 0 40px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
-.navigation__icon-busket {
-  display: none;
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
-.navigation__icon-bars {
-  display: none;
+ul {
+  list-style: none;
 }
+.nav__dropdown {
+  margin-bottom: 1px;
+  margin-left: 4px;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+.nav__flag {
+  margin-right: 6px;
+}
+
 /* Bread Crumb */
 .bread-crumb {
   width: 100%;
@@ -163,7 +218,7 @@
 .product__icon {
   width: 80%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: 20px auto;
 }
 .product__icon__item {
@@ -184,7 +239,7 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: var(--text-font-size);
   text-align: center;
   margin-bottom: 20px;
 }
@@ -202,7 +257,7 @@
 }
 .product__paragraph {
   font-family: "Manrope";
-  font-size: 14px;
+  font-size: var(--text-font-size);
   letter-spacing: 1px;
   margin-bottom: 20px;
 }
@@ -210,7 +265,7 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+  font-size: var(--text-font-size);
   line-height: 15px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -229,7 +284,7 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 12px;
+  font-size: var(--text-mobile-font-size);
   line-height: 15px;
   text-align: center;
   letter-spacing: 0.1em;
@@ -243,7 +298,7 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+  font-size: var(--text-font-size);
   text-align: center;
   letter-spacing: 0.1em;
   text-decoration-line: underline;
@@ -283,7 +338,7 @@
 }
 .product__new__icon {
   position: absolute;
-  margin: 50px 0 0 100px;
+  margin: 50px 0 0 120px;
 }
 /* Footer */
 .footer {
@@ -339,7 +394,7 @@
 .footer__input-field {
   width: 100%;
   height: 60px;
-  font-size: 14px;
+  font-size: var(--text-font-size);
   padding: 0 24px;
   text-align: start;
   color: #7d7d7d;
@@ -368,7 +423,7 @@
   font-family: var(--text-bold-font-family);
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
+  font-size: var(--text-mobile-font-size);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-right: 18px;
@@ -397,7 +452,7 @@
   font-family: var(--text-bold-font-family);
   font-style: normal;
   font-weight: 700;
-  font-size: 12px;
+  font-size: var(--text-mobile-font-size);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--color);
@@ -411,20 +466,108 @@
   color: var(--text-color);
   margin-bottom: 15px;
 }
-@media (max-width: 992px) {
-  .navigation {
-    align-items: center;
+@media (max-width: 1200px) {
+  .product__new__icon {
+    margin-left: 90px;
+    width: 80px;
   }
-  .navigation__list {
+  .nav__logo {
+    width: 150px;
+    height: auto;
+  }
+  .nav__links {
+    gap: 1rem;
+  }
+}
+@media (max-width: 992px) {
+  .nav__hamburger {
+    display: block;
+    height: 3rem;
+    width: 3rem;
+    background-image: url(../assets/icons/icon.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    position: absolute;
+    left: 2rem;
+    z-index: 9999;
+  }
+  .nav__cart-mobile {
+    display: block;
+    position: absolute;
+    right: 2rem;
+  }
+  .nav__item a {
+    font-size: 12px;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+  .nav__check:checked ~ .nav__bar {
+    transform: translateX(0);
+  }
+  .nav__bar {
+    justify-content: center;
+    z-index: 9999;
+    background-color: var(--color-white);
+    position: fixed;
+    flex-direction: column;
+    left: unset;
+    right: 0;
+    /* border: 2px solid red; */
+    width: 70vw;
+    max-width: 400px;
+    margin: 0;
+    transform: translateX(100vw);
+    transition: transform 0.3s ease;
+  }
+  .nav__layer-blur {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99;
+    backdrop-filter: blur(2px);
+    background-color: #0002;
+    transition: opacity 0.3s ease;
+  }
+  .nav__check:checked ~ .nav__layer-blur {
+    visibility: visible;
+    opacity: 1;
+  }
+  .nav__links {
+    display: block;
+    width: 100%;
+  }
+  .nav__links:last-child {
+    order: -1;
+  }
+  .nav__check:checked ~ .nav__hamburger {
+    background-image: url(../assets/icons/cross_icon.svg);
+    background-color: var(--color-white);
+    border-radius: 5px;
+  }
+  .nav__hamburger {
+    display: block;
+    height: 2rem;
+    width: 2rem;
+    background-image: url(../assets/icons/icon.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    position: absolute;
+    left: 2rem;
+    z-index: 9999;
+  }
+  .nav__item-bag {
     display: none;
   }
-  .navigation__icon-busket {
-    display: block;
-    margin-right: 20px;
-  }
-  .navigation__icon-bars {
-    display: block;
-    margin-left: 40px;
+  .bread-crumb {
+    border-top: none;
   }
   .product__row {
     grid-template-columns: 1fr 1fr;
@@ -440,6 +583,9 @@
     width: 100%;
     background: transparent;
   }
+  .product__new__icon {
+    margin-left: 80px;
+  }
   .mobile del {
     color: #808080;
     margin-left: 5px;
@@ -448,10 +594,9 @@
     font-family: "Manrope";
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: var(--text-font-size);
     text-align: center;
   }
-
   .product__row .info {
     grid-column: 1 / 3;
   }
@@ -504,11 +649,27 @@
     margin: 24px 0 27px 0;
   }
   .product__title {
-    font-size: 30px;
+    font-size: 28px;
+    margin-top: 40px;
+  }
+  .product__mobile__paragraph {
+    margin: 10px 30px;
+  }
+  .product__item__link,
+  .product__paragraph,
+  .product__subparagraph {
+    font-size: var(--text-mobile-font-size);
   }
   .product__img-bg__title {
-    font-size: 30px;
+    font-size: 32px;
     margin: 20px;
+  }
+  .product__icon {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .product__paragraph--width {
+    width: 90%;
   }
   .footer__pagination {
     display: grid;
@@ -519,10 +680,20 @@
   }
 }
 @media (max-width: 592px) {
-  .navigation__icon-bars {
-    margin-left: 20px;
+  .product__new__icon {
+    width: 40px;
+    margin-left: 40px;
   }
-  .navigation__icon-busket {
-    margin-right: 0;
+  .nav {
+    height: 5rem;
+  }
+  .nav__logo {
+    width: 120px;
+  }
+  .nav__cart-mobile {
+    right: 1rem;
+  }
+  .nav__hamburger {
+    left: 1rem;
   }
 }

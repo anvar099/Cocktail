@@ -32,88 +32,49 @@
         />
       </section>
       <!-- Navigation Bar -->
-      <nav class="navigation">
-        <div class="navigation__icon-bars">
-          <a href="" class="icon__bars">
-            <img src="../assets/icons/icon.png" alt="">
-          </a>
+      <div class="nav nav__container">
+        <input type="checkbox" name="nav__check" id="nav__check" class="nav__check">
+        <label for="nav__check" class="nav__hamburger"></label>
+        <a href="/Home Page/Home.html" class="nav__logo-link"><img class="nav__logo" src="../assets/images/Сocktail.png" alt="nav logo" loading="lazy"></a>
+        <div class="nav__item nav__cart-mobile">
+          <a href="#"><img src="../assets/icons/basket.png" loading="lazy"></a>
+          <span class="nav__bag-count">0</span>
         </div>
-    
-        <ul class="navigation__list">
-          <li><div class="navigation__toggle"></div></li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="/Shop Page/Shop.html"
-              >Shop
-              <img
-                class="navigation-icon"
-                src="../assets/icons/arrow_down.png"
-                alt=""
-                loading="lazy"
-            /></a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="">About</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href=""
-              >Fun Stuff
-              <img
-                class="navigation-icon"
-                src="../assets/icons/arrow_down.png"
-                alt=""
-                loading="lazy"
-            /></a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="" loading="lazy">Find us</a>
-          </li>
-        </ul>
-        <div class="navigation__logo">
-          <a href="Home.html"><img src="../assets/images/Сocktail.png" alt="Logo" /></a>
-        </div>
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link" href="#"
-              ><img
-                class="navigation-icon"
-                src="../assets/icons/usa.png"
-                alt=""
-                loading="lazy" />
-              usa
-              <img
-                class="navigation-icon"
-                src="../assets/icons/arrow_down.png"
-                loading="lazy"
-                alt=""
-            /></a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Contact</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Log in</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" id="busket-icon" href="#"
-              ><img
-                class="navigation-icon"
-                src="../assets/icons/basket.png"
-                loading="lazy"
-                alt="basket"
-            /></a>
-          </li>
-        </ul>
-        <div class="navigation__icon-busket">
-          <a class="navigation__link" href="#"
-            ><img
-              class="busket-icon"
-              src="../assets/icons/icon.svg"
-              loading="lazy"
-              alt="basket"
-          /></a>
-        </div>
-      </nav>
-
+        <div class="nav__layer-blur"></div>
+        <nav class="nav__bar">
+          <ul class="nav__links">
+            <li class="nav__item">
+              <a href="/Shop Page/Shop.html">
+                Shop
+                <img class="nav__dropdown" src="../assets/icons/arrow_down.png">
+              </a>
+            </li>
+            <li class="nav__item"><a href="#">About</a></li>
+            <li class="nav__item">
+              <a href="#">
+                Funn staff
+                <img class="nav__dropdown" src="../assets/icons/arrow_down.png">
+              </a>
+            </li>
+            <li class="nav__item"><a href="#">Find us</a></li>
+          </ul>
+          <ul class="nav__links">
+            <li class="nav__item">
+              <a href="#">
+                <img class="nav__flag" src="../assets/icons/usa.png" alt="flag usa">
+                Usa
+                <img class="nav__dropdown" src="../assets/icons/arrow_down.png" alt="down arrow">
+              </a>
+            </li>
+            <li class="nav__item"><a href="#">Contact</a></li>
+            <li class="nav__item"><a href="#">Log in</a></li>
+            <li class="nav__item nav__item-bag">
+              <a href="#"><img src="../assets/icons/basket.png"></a>
+              <span class="nav__bag-count">0</span>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <!-- Banner -->
       <section class="banner">
         <div class="banner__img--container">
