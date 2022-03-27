@@ -154,232 +154,173 @@ li {
 .nav__flag {
   margin-right: 6px;
 }
-
-/* Banner */
-.banner {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  background-color: #fffbf7;
-}
-.banner__img--container {
-  width: 50%;
-
-  height: 58rem;
-}
-.banner__img {
-  width: 100%;
-  object-fit: cover;
-  height: 100%;
-}
-.banner__rich {
-  width: 50%;
-  height: 58rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.banner__rich--text {
-  width: 100%;
-  height: 100%;
-  background-image: url(../assets/images/Vector.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.rich__subtitle {
-  font-family: var(--text-bold-font-family);
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.rich__title {
-  font-family: var(--title-font-family);
-  font-size: 75px;
-  width: 30rem;
-  margin: 45px 0;
+/* Benefits */
+.benefits {
   text-align: center;
 }
-.rich__subtitle--link {
-  font-family: var(--text-bold-font-family);
-  font-weight: 700;
-  color: black;
-  text-transform: uppercase;
-}
-
-
-
-/* Best seller */
-.best-sellers {
-  margin-top: 70px;
-}
-.seller__icon {
-  display: none;
-}
-.best-seller__title {
-  font-size: 70px;
-  font-family: var(--title-font-family);
-  font-weight: 700;
-  text-align: center;
-}
-.best-sellers__grid {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; */
-  /* border: 2px solid rebeccapurple; */
-  display: flex;
-  flex-direction: row;
-  margin-top: 70px;
-  /* flex-wrap: wrap; */
-  height: auto;
-}
-.best-seller {
-  display: flex;
-  flex-direction: column;
-  /* margin: 50px; */
-  width: 21.25rem;
-  height: auto;
-  /* border: 2px solid red; */
-  align-items: center;
-  text-align: center;
-  margin: 20px auto;
-  /* border: 2px solid red; */
-}
-.best-seller__img {
-  height: 340px;
-  width: 268px;
-  object-fit: cover;
-}
-.best-seller__subtitle {
-  font-size: 27px;
-  font-family: var(--title-font-family);
-  font-weight: 700;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  margin-top: 15px;
-}
-.best-seller__description {
-  font-size: var(--text-font-size);
-  font-family: var(--text-font-family);
-  height: auto;
-  margin-top: 15px;
-  text-align: center;
-  width: 80%;
-  line-height: var(--text-line-height);
-}
-.best-seller__btn {
-  font-family: var(--text-bold-font-family);
-  font-size: var(--text-font-size);
-  color: black;
-  margin-top: 15px;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
-
-
-
-/* about-us */
-.about-us {
-  display: flex;
-  margin-top: 70px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 580px;
-  background-image: url(../assets/images/Mask\ Group.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.about-us__subtitle {
-  font-family: var(--text-bold-font-family);
+.benefits__title {
+  font-family: 'Philosopher';
   font-style: normal;
   font-weight: 700;
-  font-size: var(--text-font-size);
-  text-align: center;
+  font-size: 48px;
+  margin-top: 80px;
+}
+.benefits__description {
+  font-family: 'Montserrat-variable';
+  font-size: 12px;
+  line-height: 20px;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--color);
-  margin-bottom: 35px;
-}
-.about-us__title {
-  width: 720px;
-  height: 240px;
-  font-family: var(--title-font-family);
+  width: 57%;
+  margin: 25px auto 0px auto;
   font-style: normal;
-  font-weight: 700;
-  font-size: 80px;
-  line-height: 80px;
-  text-align: center;
-  color: var(--color);
-  margin-bottom: 30px;
 }
-.about-us__link {
-  font-family: var(--text-bold-font-family);
-  font-style: normal;
-  font-weight: 700;
-  font-size: var(--text-font-size);
-  letter-spacing: 0.1em;
+.benefits__description strong{
   text-transform: uppercase;
-  color: var(--color);
 }
-
-.portfolio {
-  background-color: #fffbf6;
-}
-.portfolio__row {
-  width: 100%;
-  /* border: 2px solid red; */
+.benefits__row {
+  display: flex;
   flex: 1 0 calc(100% / 3);
+  margin: 40px 40px 15px 40px;
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+.row__item {
+  width: 85%;
+  margin: 0 auto;
+  height: auto;
+}
+.row__item__icon {
+  width: 175px;
+}
+.row__item__subparagraph {
+  font-family: 'Montserrat-variable';
+  font-size: 14px;
+  margin: 0 auto;
+  width: 90%;
+}
+.row__item__subtitle {
+  font-family: 'Philosopher';
+  margin: 24px 0 18px 0;
+  font-weight: 700;
+  font-size: 32px;
+}
+.benefits__link {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #000000;
+} 
+@media(max-width: 992px) {
+  .benefits__title {
+    font-size: 28px;
+    margin: 40px 0 16px 0;
+  }
+  .benefits__description {
+    width: 90%;
+  }
+  .row__item {
+    flex: 1 0 50%;
+  }
+}
+@media(max-width: 768px) {
+  .row__item {
+    flex: 1 0 100%;
+    box-sizing: border-box;
+  }
+  .row__item__subparagraph { 
+    width: 80%;
+  }
+  .row__item__icon {
+    width: 100px;
+  }
+  .row__item__subtitle {
+    font-size: 24px;
+    margin: 15px;
+  }
+  .benefits__link {
+    display: none;
+  }
+}
+/* enjoy */
+.enjoy {
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+.enjoy__row {
   display: flex;
   flex-direction: row;
-  box-sizing: border-box;
-  padding: 20px;
-  justify-content: space-around;
-  overflow-x: auto;
-  justify-content: start;
-
+  justify-content: space-evenly;
 }
-.portfolio__cart {
+.enjoy__text {
+  width: 45%;
+  margin: 80px 0;
   height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 40px 0;
-  /* border: 2px solid green; */
+  align-self: flex-end;
 }
-
-.portfolio__cart--paragraph {
-  width: 70%;
-  text-align: center;
-  font-family: var(--text-font-family);
+.enjoy__img {
+  width: 45%;
+  object-fit: cover;
+  margin: 80px 0;
+}
+.enjoy__title {
+  font-family: 'Philosopher';
   font-style: normal;
-  font-weight: 500;
-  font-size: var(--text-font-size);
-  color: #000000;
-  line-height: var(--text-line-height);
+  font-weight: 700;
+  position: absolute;
+  font-size: 70px;
+  margin: 80px 0 0 40px;
 }
-.portfolio__cart--icon {
-  margin: 24px 0;
+.enjoy__subtitle {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #EAE5DD;
+  margin-bottom: 17px;;
 }
-.portfolio__cart--logo {
-  margin-top: 16px;
-  height: 40px;
+.enjoy__paragraph {
+  font-family: 'Montserrat-variable';
+  font-size: 14px;
+  line-height: 170%;
+  width: 90%;
 }
-.ellipse__icon--row {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 40px;
+@media(max-width: 1200px) {
+  .enjoy__row .second {
+    display: none;
+  }
+  .enjoy__paragraph {
+    width: 100%;
+  }
 }
-.ellipse__icon {
-  margin: 0 8px;
+@media(max-width: 992px) {
+  .enjoy__row {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .enjoy__title {
+    position: relative;
+    text-align: center;
+    padding: 40px 0 20px 0;
+    font-size: 32px;
+  }
+  .enjoy__img {
+    width: 90%;
+    height: auto;
+    margin: 0;
+  }
+  .enjoy__text {
+    width: 90%;
+    align-self:center;
+    margin: 30px 0;
+  }
+  .enjoy__row .second {
+    display: block;
+  }
 }
 /* Rich */
 .rich {
@@ -397,6 +338,7 @@ li {
 .rich__img {
   margin: 0;
   width: 100%;
+  object-fit: cover;
 }
 .rich__fruity--container {
   display: flex;
@@ -443,124 +385,80 @@ li {
   text-transform: uppercase;
   text-decoration: underline;
 }
-
-/* ingredients */
-.ingredients {
-  background-color: #fffbf6;
+/* FAQ */
+.faq {
+  background-color: black;
+  color: white;
+  height: auto;
+  width: 100%;
+}
+.faq__container {
+  margin: 0 120px 0 80px;
+  padding: 80px 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
 }
-.ingredients__title {
-  font-family: var(--title-font-family);
-  font-style: normal;
+.faq__title {
+  width: 43%;
+  font-family: 'Philosopher';
   font-weight: 700;
-  font-size: 80px;
-  margin: 80px 0 46px 0;
+  font-size: 70px;
+  color: #EAE5DD;
 }
-.ingredients__description {
-  font-family: var(--text-font-family);
-  font-style: normal;
-  font-weight: 500;
-  text-align: center;
-  font-size: var(--text-font-size);
-  width: 719px;
-  margin-bottom: 16px;
-  line-height: var(--text-line-height);
+.faq__row {
+  width: 57%;
 }
-.ingredients__btn {
-  font-family: var(--text-bold-font-family);
-  font-style: normal;
-  font-weight: 700;
-  font-size: var(--text-font-size);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #bb6b1e;
-}
-.ingredients__reverse {
+.faq__item {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.ingredient {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   justify-content: space-between;
-  width: 90%;
-  margin: 30px;
-  height: auto;
-}
-.ingredient__img {
   width: 100%;
-  object-fit: cover;
-}
-
-/* Enim */
-.enim {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: auto;
-}
-.enim__fruity--img {
-  width: 50%;
-  margin: 34px 0;
-  display: flex;
-  padding: 0;
-}
-.enim__img {
-  margin: 0;
-  width: 100%;
-}
-.enim__fruity--container {
-  display: flex;
-  width: 50%;
+  border-top: 1px solid #FFFFFF;
   align-items: center;
-  margin: 34px 0;
 }
-
-.refer {
-  height: 480px;
-  background-image: url(../assets/images/refer.png);
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  object-fit: cover;
-  flex-direction: column;
-}
-.refer__title {
-  font-family: var(--title-font-family);
-  font-style: normal;
+.faq__question {
+  font-family: 'Montserrat';
   font-weight: 700;
-  font-size: 80px;
-  color: var(--color);
-  margin-bottom: 51px;
-}
-.refer__subtitle {
-  font-family: var(--text-bold-font-family);
-  font-style: normal;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-weight: 700;
-  font-size: var(--text-font-size);
-  color: var(--color);
-  margin-bottom: 18px;
-}
-.refer__link {
-  font-family: var(--text-font-family);
-  font-style: normal;
-  font-weight: 700;
-  font-size: var(--text-font-size);
+  font-size: 12px;
+  line-height: 15px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--color);
+  padding: 20px 0;
 }
-
+.faq__answer {
+  font-family: 'Montserrat-variable';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 170%;
+  margin-bottom: 20px;
+}
+.faq__read-more {
+  width: 8px;
+}
+.faq__row .border-bottom {
+  border-bottom: 1px solid #FFFFFF;
+}
+@media(max-width: 1200px) {
+  .faq__container {
+    margin: 0 80px 0 80px;
+    padding: 50px 0;
+  }
+}
+@media(max-width: 992px) {
+  .faq__title {
+    font-size: 32px;
+    text-align: center;
+  }
+  .faq__container {
+    flex-direction: column;
+    width: 100%;
+    padding: 40px 0 40px 0;
+    margin: 0;
+    align-items: center;
+  }
+  .faq__row {
+    width: 90%;
+    margin-top: 28px;
+  }
+}
 /* Join-us */
 .join-us {
   text-align: center;
@@ -590,7 +488,6 @@ li {
   height: 100%;
   object-fit: cover;
 }
-
 /* Footer */
 .footer {
   background-color: black;
@@ -728,24 +625,6 @@ li {
   .nav__links {
     gap: 1rem;
   }
-  .best-sellers__grid {
-    overflow-x: auto;
-  }
-  .best-seller {
-    flex: 1 0 calc(100% / 3);
-    box-sizing: border-box;
-    padding: 20px;
-  }
-  .seller__icon {
-    display: block;
-    cursor: pointer;
-  }
-  .best-seller__arrow {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
 }
 
 @media (max-width: 992px) {
@@ -835,28 +714,7 @@ li {
   .nav__item-bag {
     display: none;
   }
-  .banner {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-  }
-  .banner__img--container {
-    width: 100%;
-    height: 48rem;
-    /* object-fit: cover; */
-  }
-  .banner__rich {
-    width: 100%;
-    height: 38rem;
-  }
-  .banner__rich--text {
-    display: flex;
-    background-position: top;
-    justify-content: flex-start;
-  }
-  .rich__subtitle {
-    margin-top: 5rem;
-  }
+  
   .rich {
     display: flex;
     flex-direction: column-reverse;
@@ -891,53 +749,6 @@ li {
   .fruity__link {
     font-size: var(--text-mobile-font-size);
   }
-  .best-seller {
-    flex: 1 0 50%;
-  }
-  
-  .portfolio__cart {
-    flex: 1 0 50%;
-  }
-  .ingredients__title {
-    font-size: 40px;
-    margin: 40px 0 10px 0;
-  }
-  .ingredients__description {
-    width: 90%;
-    font-size: var(--text-mobile-font-size);
-  }
-
-  .enim {
-    display: flex;
-    flex-direction: column;
-  }
-  .enim__fruity--img {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .enim__img {
-    width: 90%;
-  }
-  .enim__fruity--container {
-    width: 100%;
-    justify-content: center;
-    margin: 0 0 40px 0;
-  }
-
-  .refer {
-    height: 375px;
-    background-position: center;
-  }
-  .refer__title {
-    font-size: 45px;
-  }
-  .refer__subtitle {
-    font-size: var(--text-mobile-font-size);
-  }
-  .refer__link {
-    font-size: var(--text-mobile-font-size);
-  }
 
   .join-us {
     height: 104px;
@@ -953,6 +764,7 @@ li {
   .gallery__img {
     width: 100%;
   }
+
 
   .footer {
     height: auto;
@@ -994,73 +806,6 @@ li {
     display: none;
   }
 
-  .banner__img--container {
-    height: 32rem;
-
-  }
-  .banner__img {
-    object-fit: cover;
-  }
-  .banner__rich {
-    height: 30rem;
-  }
-  .rich__title {
-    font-size: 50px;
-    width: 28rem;
-  }
-  .banner__rich--text {
-    background-size: 20.5rem;
-  }
-
-  .best-seller__title {
-    font-size: 35px;
-  }
-  .best-seller__subtitle {
-    font-size: 20px;
-  }
-  .best-seller__btn {
-    font-size: var(--text-mobile-font-size);
-  }
-  .best-seller {
-    width: 10rem;
-    height: auto;
-  }
-  .best-seller__img {
-    max-height: 187px;
-    max-width: 147px;
-  }
-
-  .about-us {
-    height: 375px;
-    background-position: center;
-  }
-  .about-us__title {
-    font-size: 40px;
-    line-height: 40px;
-    height: auto;
-    width: 18.75rem;
-  }
-  .about-us__subtitle {
-    font-size: var(--text-mobile-font-size);
-  }
-  .about-us__link {
-    font-size: var(--text-mobile-font-size);
-  }
-  .portfolio__cart {
-    flex: 1 0 100%;
-    box-sizing: border-box;
-    padding: 20px;
-  }
-  .ingredient {
-    grid-template-columns: 1fr 1fr;
-  }
-  .ingredients__reverse {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    margin-bottom: 45px;
-  }
-
   .footer__pagination {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1083,27 +828,4 @@ li {
   .nav__hamburger {
     left: 1rem;
   }
-  .banner__img--container {
-    height: 25rem;
-  }
-  .banner__rich {
-    height: 20rem;
-  }
-  .rich__title {
-    font-size: 40px;
-    width: 17rem;
-  }
-  .banner__rich--text {
-    background-size: 13rem;
-  }
-  .rich__subtitle {
-    margin-top: 2rem;
-  }
-  .rich__title {
-    margin: 20px;
-  }
-  .best-seller {
-    padding: 10px;
-  }
-  
 }
