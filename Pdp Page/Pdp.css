@@ -2,7 +2,10 @@
   margin: 0;
   padding: 0;
 }
-
+@font-face {
+  font-family: "Manrope";
+  src: url(../assets/fonts/Manrope/Manrope-VariableFont_wght.ttf);
+}
 @font-face {
   font-family: "Montserrat";
   src: url(../assets/fonts/Montserrat/static/Montserrat-Bold.ttf);
@@ -154,19 +157,42 @@ li {
 .nav__flag {
   margin-right: 6px;
 }
+/* Bread Crumb */
+.bread-crumb {
+  width: 100%;
+  border-top: 1px solid #cbcbcb;
+  border-bottom: 1px solid #cbcbcb;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.bread-crumb__link {
+  text-decoration: none;
+  margin: 0 20px;
+  font-family: "Manrope";
+  color: black;
+}
+.bread-crumb__arrow {
+  width: 4px;
+  height: 8px;
+}
+.bread-crumb .color-light {
+  opacity: 0.5;
+}
 /* Benefits */
 .benefits {
   text-align: center;
 }
 .benefits__title {
-  font-family: 'Philosopher';
+  font-family: "Philosopher";
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
   margin-top: 80px;
 }
 .benefits__description {
-  font-family: 'Montserrat-variable';
+  font-family: "Montserrat-variable";
   font-size: 12px;
   line-height: 20px;
   letter-spacing: 0.1em;
@@ -174,7 +200,7 @@ li {
   margin: 25px auto 0px auto;
   font-style: normal;
 }
-.benefits__description strong{
+.benefits__description strong {
   text-transform: uppercase;
 }
 .benefits__row {
@@ -193,27 +219,30 @@ li {
   width: 175px;
 }
 .row__item__subparagraph {
-  font-family: 'Montserrat-variable';
+  font-family: "Montserrat-variable";
   font-size: 14px;
   margin: 0 auto;
   width: 90%;
 }
 .row__item__subtitle {
-  font-family: 'Philosopher';
+  font-family: "Philosopher";
   margin: 24px 0 18px 0;
   font-weight: 700;
   font-size: 32px;
 }
+.benefits__link-box {
+  margin-bottom: 85px;
+}
 .benefits__link {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.1em;
   text-decoration-line: underline;
   text-transform: uppercase;
   color: #000000;
-} 
-@media(max-width: 992px) {
+}
+@media (max-width: 992px) {
   .benefits__title {
     font-size: 28px;
     margin: 40px 0 16px 0;
@@ -225,12 +254,12 @@ li {
     flex: 1 0 50%;
   }
 }
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .row__item {
     flex: 1 0 100%;
     box-sizing: border-box;
   }
-  .row__item__subparagraph { 
+  .row__item__subparagraph {
     width: 80%;
   }
   .row__item__icon {
@@ -242,6 +271,192 @@ li {
   }
   .benefits__link {
     display: none;
+  }
+}
+.goods {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-image: linear-gradient(to left, white 50%, #fffbf7 50%);
+}
+.goods__text-details {
+  height: 100%;
+}
+.goods__price__details {
+  height: 100%;
+}
+.goods__img__container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.goods__img {
+  padding-left: 2rem;
+  width: 100%;
+  object-fit: contain;
+  margin: 0 auto;
+}
+.text__details {
+  margin: 106px 40px;
+  width: 90%;
+}
+.text__details__subtitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.text__details__title {
+  font-family: "Philosopher";
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.text__details__quality {
+  font-family: "Montserrat-variable";
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.text__details__description {
+  font-family: "Montserrat-variable";
+  font-size: 14px;
+  line-height: 157.6%;
+  display: flex;
+}
+.text__details__icons {
+  display: flex;
+  align-items: center;
+}
+.text__details__icon {
+  margin-left: 18px;
+}
+.text__details__link {
+  font-family: "Montserrat";
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: black;
+}
+.text__details__line {
+  border-top: 1px solid #cbcbcb;
+  margin: 16px 0;
+}
+.price__details {
+  margin: 106px 40px;
+  float: right;
+  width: 90%;
+}
+.price {
+  font-family: "Montserrat";
+  font-weight: 1000;
+  font-size: 32px;
+}
+.price__details__number {
+  display: flex;
+}
+.text__details__num {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.price__details__icon {
+  margin-right: 15px;
+}
+.price__details .text__details__description {
+  margin-bottom: 20px;
+}
+.price__details .one-border {
+  border-bottom: 1px solid #bb6b1e;
+}
+.price__details__selected {
+  display: flex;
+  display: flex;
+  align-items: center;
+}
+.price__details__selected p {
+  margin: 8px 0;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.price__details__selected img {
+  margin-right: 16px;
+}
+.price__details__selected a {
+  font-family: "Montserrat-variable";
+  font-size: 12px;
+  color: black;
+  text-decoration: underline;
+  margin-left: 8px;
+}
+.price__details__btn {
+  width: 100%;
+  height: 48px;
+  background-color: black;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.price__details__btn .text__details__link {
+  color: white;
+}
+.price__details__dropdown {
+  padding-top: 20px;
+}
+.price__details__dropdown .dropdown {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.dropdown__name {
+  font-family: "Montserrat";
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 16px 0;
+}
+.dropdown__read-more {
+  width: 8px;
+}
+@media (max-width: 992px) {
+  .goods {
+    grid-template-columns: 1fr;
+    border: 2px solid red;
+    background-image: none;
+  }
+  .goods__img__container {
+    grid-row: 1 / 2;
+    background: linear-gradient(to top, white 50%, #fffbf7 50%);
+    border: 2px solid green;
+  }
+  .goods__img {
+    object-fit: cover;
+    border: 2px solid blue;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+  }
+  .goods__text-details {
+    width: 100%;
+  }
+  .goods__price-details {
+    width: 100%;
+  }
+  .text__details, .price__details {
+    margin: 0 auto;
+    border: 2px solid green;
+    width: 90%;
+    /* float: left; */
+  }
+  .price__details {
+    float: none;
   }
 }
 /* enjoy */
@@ -267,7 +482,7 @@ li {
   margin: 80px 0;
 }
 .enjoy__title {
-  font-family: 'Philosopher';
+  font-family: "Philosopher";
   font-style: normal;
   font-weight: 700;
   position: absolute;
@@ -275,21 +490,21 @@ li {
   margin: 80px 0 0 40px;
 }
 .enjoy__subtitle {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 700;
   font-size: 12px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #EAE5DD;
-  margin-bottom: 17px;;
+  color: #eae5dd;
+  margin-bottom: 17px;
 }
 .enjoy__paragraph {
-  font-family: 'Montserrat-variable';
+  font-family: "Montserrat-variable";
   font-size: 14px;
   line-height: 170%;
   width: 90%;
 }
-@media(max-width: 1200px) {
+@media (max-width: 1200px) {
   .enjoy__row .second {
     display: none;
   }
@@ -297,7 +512,7 @@ li {
     width: 100%;
   }
 }
-@media(max-width: 992px) {
+@media (max-width: 992px) {
   .enjoy__row {
     flex-direction: column-reverse;
     align-items: center;
@@ -315,7 +530,7 @@ li {
   }
   .enjoy__text {
     width: 90%;
-    align-self:center;
+    align-self: center;
     margin: 30px 0;
   }
   .enjoy__row .second {
@@ -399,10 +614,10 @@ li {
 }
 .faq__title {
   width: 43%;
-  font-family: 'Philosopher';
+  font-family: "Philosopher";
   font-weight: 700;
   font-size: 70px;
-  color: #EAE5DD;
+  color: #eae5dd;
 }
 .faq__row {
   width: 57%;
@@ -411,11 +626,11 @@ li {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  border-top: 1px solid #FFFFFF;
+  border-top: 1px solid #ffffff;
   align-items: center;
 }
 .faq__question {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
@@ -424,7 +639,7 @@ li {
   padding: 20px 0;
 }
 .faq__answer {
-  font-family: 'Montserrat-variable';
+  font-family: "Montserrat-variable";
   font-weight: 400;
   font-size: 13px;
   line-height: 170%;
@@ -434,15 +649,15 @@ li {
   width: 8px;
 }
 .faq__row .border-bottom {
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: 1px solid #ffffff;
 }
-@media(max-width: 1200px) {
+@media (max-width: 1200px) {
   .faq__container {
     margin: 0 80px 0 80px;
     padding: 50px 0;
   }
 }
-@media(max-width: 992px) {
+@media (max-width: 992px) {
   .faq__title {
     font-size: 32px;
     text-align: center;
@@ -528,7 +743,7 @@ li {
   position: absolute;
   padding-right: 24px;
 }
-  
+
 .footer__input {
   width: 80%;
   margin-bottom: 10px;
@@ -540,7 +755,7 @@ li {
 .footer__arrow-icon {
   min-width: 24px;
 }
-  
+
 .footer__input-field {
   width: 100%;
   height: 60px;
@@ -714,7 +929,10 @@ li {
   .nav__item-bag {
     display: none;
   }
-  
+  .bread-crumb {
+    border-top: none;
+  }
+
   .rich {
     display: flex;
     flex-direction: column-reverse;
@@ -765,7 +983,6 @@ li {
     width: 100%;
   }
 
-
   .footer {
     height: auto;
   }
@@ -793,7 +1010,6 @@ li {
   }
 }
 @media (max-width: 768px) {
-  
   .notification-bar {
     display: flex;
     justify-content: center;
@@ -804,6 +1020,9 @@ li {
   }
   .bar__learn-more {
     display: none;
+  }
+  .bread-crumb__link {
+    margin: 0 10px;
   }
 
   .footer__pagination {
