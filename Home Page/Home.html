@@ -37,8 +37,7 @@
         <label for="nav__check" class="nav__hamburger"></label>
         <a href="/Home Page/Home.html" class="nav__logo-link"><img class="nav__logo" src="../assets/images/Сocktail.png" alt="nav logo" loading="lazy"></a>
         <div class="nav__item nav__cart-mobile">
-          <a href="#"><img src="../assets/icons/basket.png" loading="lazy"></a>
-          <span class="nav__bag-count">0</span>
+          <a href="../Bag Page/bag.html"><img src="../assets/icons/basket.png" loading="lazy"></a>
         </div>
         <div class="nav__layer-blur"></div>
         <nav class="nav__bar">
@@ -49,7 +48,7 @@
                 <img class="nav__dropdown" src="../assets/icons/arrow_down.png">
               </a>
             </li>
-            <li class="nav__item"><a href="/Pdp Page/Pdp.html">About</a></li>
+            <li class="nav__item"><a href="">About</a></li>
             <li class="nav__item">
               <a href="#">
                 Funn staff
@@ -69,8 +68,7 @@
             <li class="nav__item"><a href="#">Contact</a></li>
             <li class="nav__item"><a href="#">Log in</a></li>
             <li class="nav__item nav__item-bag">
-              <a href="#"><img src="../assets/icons/basket.png"></a>
-              <span class="nav__bag-count">0</span>
+              <a href="../Bag Page/bag.html"><img src="../assets/icons/basket.png"></a>
             </li>
           </ul>
         </nav>
@@ -99,7 +97,7 @@
       <!-- Best Seller -->
       <section class="best-sellers">
         <div class="best-seller__arrow">
-          <div class="seller__icon">
+          <div class="seller__icon" id="prev">
             <img
               class="best-seller__arrow-icon"
               src="../assets/icons/Arrow 2.png"
@@ -107,7 +105,7 @@
             />
           </div>
           <h1 class="best-seller__title">Our best sellers</h1>
-          <div class="seller__icon">
+          <div class="seller__icon" id="next">
             <img
               class="best-seller__arrow-icon"
               src="../assets/icons/Arrow 3.png"
@@ -116,7 +114,7 @@
           </div>
         </div>
 
-        <div class="best-sellers__grid">
+        <div class="best-sellers__grid" id="slider">
           <div class="best-seller">
             <img
               class="best-seller__img"
@@ -129,7 +127,7 @@
               Ut enim ad minim veniam, quis nostrud exerp ex ea commodo
               consequat.
             </p>
-            <a class="best-seller__btn" href="#">Shop now</a>
+            <a class="best-seller__btn" href="/Pdp Page/Pdp.html">Shop now</a>
           </div>
           <div class="best-seller">
             <img
@@ -143,7 +141,7 @@
               Ut enim ad minim veniam, quis nostrud exerp ex ea commodo
               consequat.
             </p>
-            <a class="best-seller__btn" href="#">Shop now</a>
+            <a class="best-seller__btn" href="/Pdp Page/Pdp.html">Shop now</a>
           </div>
           <div class="best-seller">
             <img
@@ -157,7 +155,7 @@
               Ut enim ad minim veniam, quis nostrud exerp ex ea commodo
               consequat.
             </p>
-            <a class="best-seller__btn" href="#">Shop now</a>
+            <a class="best-seller__btn" href="/Pdp Page/Pdp.html">Shop now</a>
           </div>
           <div class="best-seller">
             <img
@@ -171,7 +169,7 @@
               Ut enim ad minim veniam, quis nostrud exerp ex ea commodo
               consequat.
             </p>
-            <a class="best-seller__btn" href="#">Shop now</a>
+            <a class="best-seller__btn" href="/Pdp Page/Pdp.html">Shop now</a>
           </div>
         </div>
       </section>
@@ -187,7 +185,7 @@
 
       <!-- our portfolio -->
       <section class="portfolio">
-        <div class="portfolio__row">
+        <div class="portfolio__row owl-carousel">
           <div class="portfolio__cart">
             <img
               class="portfolio__cart--icon"

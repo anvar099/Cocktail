@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "Manrope";
+  src: url(../assets/fonts/Manrope/Manrope-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Philosopher";
+  src: url(../assets/fonts/Philosopher/Philosopher-Bold.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../assets/fonts/Montserrat/static/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: "Montserrat-variable";
+  src: url(../assets/fonts/Montserrat/static/Montserrat-Medium.ttf);
+}
+
+:root {
+  --text-line-height: 24px;
+  --text-color: #7d7d7d;
+  --title-font-family: "Philosopher";
+  --text-font-family: "Montserrat-variable";
+  --text-bold-font-family: "Montserrat";
+  --text-font-size: 14px;
+  --text-mobile-font-size: 12px;
+  --color: #ffffff;
+  --font-weight-bold: 700;
+}
+.notification-bar {
+  background-color: black;
+  min-height: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.notification-bar__paragraph {
+  color: var(--color);
+  font-family: var(--text-font-family);
+  font-size: var(--text-font-size);
+  font-weight: 500;
+}
+.notification-bar__paragraph a {
+  color: var(--color);
+  font-family: var(--text-font-family);
+  font-size: var(--text-font-size);
+  font-weight: 500;
+}
+.notification-bar__arrow-icon {
+  margin: 0 40px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .notification-bar {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .notification-bar__arrow-icon {
+    display: none;
+  }
+  .bar__learn-more {
+    display: none;
+  }
+}

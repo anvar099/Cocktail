@@ -1,0 +1,196 @@
+@font-face {
+  font-family: "Manrope";
+  src: url(../assets/fonts/Manrope/Manrope-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Philosopher";
+  src: url(../assets/fonts/Philosopher/Philosopher-Bold.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../assets/fonts/Montserrat/static/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: "Montserrat-variable";
+  src: url(../assets/fonts/Montserrat/static/Montserrat-Medium.ttf);
+}
+
+:root {
+  --text-line-height: 24px;
+  --text-color: #7d7d7d;
+  --title-font-family: "Philosopher";
+  --text-font-family: "Montserrat-variable";
+  --text-bold-font-family: "Montserrat";
+  --text-font-size: 14px;
+  --text-mobile-font-size: 12px;
+  --color: #ffffff;
+  --font-weight-bold: 700;
+}
+.footer {
+  background-color: black;
+  border: 1px solid black;
+}
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  margin: 80px 120px 0 120px;
+}
+.footer__contact--container {
+  width: 100%;
+}
+.footer__pagination {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.footer__title {
+  font-family: var(--text-bold-font-family);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 39px;
+  color: var(--color);
+}
+.footer__paragraph {
+  font-family: var(--text-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--text-font-size);
+  color: var(--text-color);
+  margin: 7px 0 16px 0;
+}
+.footer__input .footer__arrow-icon {
+  position: absolute;
+  padding-right: 24px;
+}
+
+.footer__input {
+  width: 80%;
+  margin-bottom: 10px;
+  height: 60px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.footer__arrow-icon {
+  min-width: 24px;
+  cursor: pointer;
+}
+
+.footer__input-field {
+  width: 100%;
+  height: 60px;
+  font-size: var(--text-font-size);
+  padding: 0 24px;
+  text-align: start;
+  color: #7d7d7d;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid #7d7d7d;
+}
+.contact__social-media {
+  margin-top: 26px;
+  cursor: pointer;
+}
+.social-media__icon {
+  width: 12px;
+  height: 12px;
+  margin-right: 20px;
+}
+.footer__comments {
+  display: flex;
+  flex-direction: row;
+  margin: 85px 120px;
+}
+.comment__row {
+  display: flex;
+  flex-direction: row;
+}
+.comment__logo {
+  font-family: var(--text-bold-font-family);
+  font-style: normal;
+  font-weight: 600;
+  font-size: var(--text-mobile-font-size);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-right: 18px;
+  color: var(--color);
+}
+.comment__expire-date {
+  font-family: var(--text-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--text-font-size);
+  color: rgb(192, 191, 191);
+  margin-right: 23px;
+}
+.comment__privacy {
+  font-family: var(--text-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--text-font-size);
+  color: var(--text-color);
+  margin-right: 15px;
+  cursor: pointer;
+}
+.pagination__column {
+  list-style: none;
+}
+.pagination__title {
+  font-family: var(--text-bold-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--text-mobile-font-size);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color);
+  margin-bottom: 20px;
+}
+.pagination__link {
+  font-family: var(--text-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--text-font-size);
+  color: var(--text-color);
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .footer {
+    height: auto;
+  }
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 15px;
+  }
+  .footer__title {
+    font-size: 24px;
+  }
+  .footer__comments {
+    margin: 57px 0 20px 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  .comment__row {
+    margin: 5px 0;
+  }
+  .footer__input {
+    width: 100%;
+  }
+  .pagination__title {
+    margin-top: 26px;
+  }
+}
+@media (max-width: 768px) {
+  .footer__pagination {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .pagination__column {
+    margin: 15px 0;
+  }
+}

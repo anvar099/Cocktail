@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bag.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <title>Cocktail</title>
+  </head>
+  <body>
+    <main class="bag">
+      <!-- Notification Bar -->
+      <section class="notification-bar">
+        <img
+          class="notification-bar__arrow-icon"
+          src="../assets/icons/Right.png"
+          alt=""
+          loading="lazy"
+        />
+        <p class="notification-bar__paragraph">
+          Free domestic shipping on orders over $50
+          <a class="bar__learn-more" href="#">Learn more</a>
+        </p>
+        <img
+          class="notification-bar__arrow-icon"
+          src="../assets/icons/simple.png"
+          alt=""
+          loading="lazy"
+        />
+      </section>
+      <!-- Navigation Bar -->
+      <div class="nav nav__container">
+        <input
+          type="checkbox"
+          name="nav__check"
+          id="nav__check"
+          class="nav__check"
+        />
+        <label for="nav__check" class="nav__hamburger"></label>
+        <a href="/Home Page/Home.html" class="nav__logo-link"
+          ><img
+            class="nav__logo"
+            src="../assets/images/Сocktail.png"
+            alt="nav logo"
+            loading="lazy"
+        /></a>
+        <div class="nav__item nav__cart-mobile">
+          <a href="../Bag Page/bag.html"
+            ><img src="../assets/icons/basket.png" loading="lazy"
+          /></a>
+        </div>
+        <div class="nav__layer-blur"></div>
+        <nav class="nav__bar">
+          <ul class="nav__links">
+            <li class="nav__item">
+              <a href="/Shop Page/Shop.html">
+                Shop
+                <img
+                  class="nav__dropdown"
+                  src="../assets/icons/arrow_down.png"
+                />
+              </a>
+            </li>
+            <li class="nav__item"><a href="">About</a></li>
+            <li class="nav__item">
+              <a href="#">
+                Funn staff
+                <img
+                  class="nav__dropdown"
+                  src="../assets/icons/arrow_down.png"
+                />
+              </a>
+            </li>
+            <li class="nav__item"><a href="#">Find us</a></li>
+          </ul>
+          <ul class="nav__links">
+            <li class="nav__item">
+              <a href="#">
+                <img
+                  class="nav__flag"
+                  src="../assets/icons/usa.png"
+                  alt="flag usa"
+                />
+                Usa
+                <img
+                  class="nav__dropdown"
+                  src="../assets/icons/arrow_down.png"
+                  alt="down arrow"
+                />
+              </a>
+            </li>
+            <li class="nav__item"><a href="#">Contact</a></li>
+            <li class="nav__item"><a href="#">Log in</a></li>
+            <li class="nav__item nav__item-bag">
+              <a href="../Bag Page/bag.html"
+                ><img src="../assets/icons/basket.png"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Bag -->
+      <section class="bag">
+        <h2 class="bag__title">My Bag</h2>
+        <div class="bag__container">
+          <div class="bag__row">
+            <h4 class="bag__row__subtitle">Product</h4>
+            <h4 class="bag__row__subtitle">Price</h4>
+            <h4 class="bag__row__subtitle">Qty</h4>
+            <h4 class="bag__row__subtitle">Total</h4>
+          </div>
+          <div class="bag__line"></div>
+          <div class="bag__row">
+            <div class="bag__object">
+              <div class="object__img">
+                <img
+                  src="../assets/images/bag__funkin.png"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="object__description">
+                <h3 class="object__name">Medium-bodied</h3>
+                <p class="object__number">1 bottle</p>
+                <p class="object__shipping">Delivery every month</p>
+                <a class="object__remove" href="#">Remove</a>
+              </div>
+            </div>
+            <div class="bag__object object__sale__mobile">
+              <p class="object__sale">$28.00 <strike>$30.00</strike></p>
+              <a class="object__remove__mobile" href="#">Remove</a>
+            </div>
+            <div class="bag__object">
+              <div class="object__border">
+                <p class="object__numbers">-</p>
+                <p class="object__numbers">1</p>
+                <p class="object__numbers">+</p>
+              </div>
+            </div>
+            <div class="bag__object">
+              <p class="object__price">$28.00</p>
+            </div>
+          </div>
+          <div class="bag__line"></div>
+          <div class="bag__row">
+            <div class="bag__object">
+              <div class="object__img">
+                <img
+                  src="../assets/images/bag__funkin.png"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="object__description">
+                <h3 class="object__name">Light-bodied</h3>
+                <p class="object__number">2 bottle</p>
+                <a class="object__remove" href="#">Remove</a>
+              </div>
+            </div>
+            <div class="bag__object object__sale__mobile">
+              <p class="object__sale">$35.59</p>
+              <a class="object__remove__mobile" href="#">Remove</a>
+            </div>
+            <div class="bag__object">
+              <div class="object__border">
+                <p class="object__numbers">-</p>
+                <p class="object__numbers">2</p>
+                <p class="object__numbers">+</p>
+              </div>
+            </div>
+            <div class="bag__object">
+              <p class="object__price">$71.18</p>
+            </div>
+          </div>
+          <div class="bag__line horyzontal__line"></div>
+          <div class="bag__form__row">
+            <div class="message">
+              <div class="bag__line"></div>
+              <div class="gift__container">
+                <div class="gift">
+                  <img
+                    class="gift__icon"
+                    src="../assets/icons/gift.svg"
+                    alt=""
+                  />
+                  <p>Sending a gift?</p>
+                </div>
+                <div class="gift">
+                  <a class="gift__link" href="#">Remove</a>
+                  <a class="gift__add__link" href="#">Add message <img src="../assets/icons/Arrow 1.svg" alt=""></a>
+                </div>
+              </div>
+              <div class="bag__line"></div>
+              <div>
+                <textarea  class="message__tool-bar">
+                </textarea>
+                <div class="save__message">
+                  <a href="" class="save__message__link">save message</a>
+                </div>
+                <div class="message__cancel">
+                  <a class="message__cancel__link" href="">cancel</a>
+                </div>
+              </div>
+            </div>
+            <div class="checkout">
+              <div class="checkout__title">
+                <h2>Subtotal</h2>
+                <h2>$99.18</h2>
+              </div>
+              <p class="checkout__text">Shipping & tax calculated at checkout</p>
+              <div class="checkout__progress"></div>
+              <p class="checkout__text"><strong>$5.00 </strong>away from free shipping</p>
+              <div class="checkot__line"></div>
+              <div class="checkout__protection">
+                <div>
+                  <div class="checkout__package">
+                  <img class="checkout__package__info" src="../assets/images/checkout-logo.svg" alt="" />
+                  <h3 class="checkout__package__info">Package protection</h3>
+                  <img class="checkout__package__info" src="../assets/icons/more info.svg" alt="" />
+                </div>
+                <div class="checkout__text-in">
+                  <p class="checkout__text">For damage, lost & theft for <strong>$0.99</strong></p>
+                </div>
+                </div>
+                <img src="../assets/icons/turn-offf.svg" alt="">
+              </div>
+              <div class="checkot__line"></div>
+              <div class="save__message">
+                  <a href="" class="save__message__link">save message</a>
+                </div>
+            </div>
+            <div class="bag__object__mobile">
+              <div class="bag__line"></div>
+            <h3 class="bag__row__subtitle">You might also like</h3>
+            <div class="bag__mobile__row">
+              <div>
+                <img
+                  src="../assets/images/bag__funkin.png"
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
+              
+              <div class="object__mobile__container">
+                <div class="object__mobile__price">
+                  <div>
+                    <h3 class="object__name">Full-bodied</h3>
+                    <p class="object__number">1 bottle</p>
+                  </div>
+                  <div class="object__sale">$35.59</div>
+                </div>
+                <div class="object__mobile__add-cart">
+                  <a href="" class="bag__add-cart">add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="bag__line horyzontal__line"></div>
+          </div>
+          </div>
+
+          
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__row">
+          <div class="footer__container">
+            <div class="footer__contact--container">
+              <h4 class="footer__title">Newsletter</h4>
+              <p class="footer__paragraph">
+                Sign up to save 10% on your next order
+              </p>
+              <div class="footer__input">
+                <img
+                  src="../assets/icons/Arrow 1.png"
+                  class="footer__arrow-icon"
+                  alt=""
+                />
+                <input
+                  class="footer__input-field"
+                  placeholder="Email Address"
+                  type="email"
+                />
+              </div>
+              <div class="contact__social-media">
+                <img
+                  class="social-media__icon"
+                  src="../assets/icons/instagram.png"
+                  alt=""
+                />
+                <img
+                  class="social-media__icon"
+                  src="../assets/icons/facebook.png"
+                  alt=""
+                />
+                <img
+                  class="social-media__icon"
+                  src="../assets/icons/pinteres.png"
+                  alt=""
+                />
+                <img
+                  class="social-media__icon"
+                  src="../assets/icons/twitter.png"
+                  alt=""
+                />
+                <img
+                  class="social-media__icon"
+                  src="../assets/icons/you_tube.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="footer__pagination">
+              <ul class="pagination__column">
+                <li><h3 class="pagination__title">explore</h3></li>
+                <li class="pagination__link">Account</li>
+                <li class="pagination__link">Gift Card</li>
+                <li class="pagination__link">Refer a Friend</li>
+                <li class="pagination__link">Affiliates</li>
+                <li class="pagination__link">Corporate Gifting</li>
+              </ul>
+              <ul class="pagination__column">
+                <li><h3 class="pagination__title">Get Help</h3></li>
+                <li class="pagination__link">Shop</li>
+                <li class="pagination__link">FAQ</li>
+                <li class="pagination__link">Shipping & Returns</li>
+                <li class="pagination__link">Store Locator</li>
+              </ul>
+              <ul class="pagination__column">
+                <li><h3 class="pagination__title">Company</h3></li>
+                <li class="pagination__link">About</li>
+                <li class="pagination__link">Contact</li>
+                <li class="pagination__link">Blog</li>
+                <li class="pagination__link">Press</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__comments">
+            <div class="comment__row">
+              <p class="comment__logo">/de · swa/</p>
+              <p class="comment__expire-date">®2021 Сocktail</p>
+            </div>
+            <div class="comment__row">
+              <p class="comment__privacy">Privacy policy</p>
+              <p class="comment__privacy">Terms of use</p>
+              <p class="comment__privacy">AMASS</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="./bag.js"></script>
+  </body>
+</html>
