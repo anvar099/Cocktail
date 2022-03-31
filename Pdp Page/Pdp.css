@@ -65,99 +65,6 @@
 .bread-crumb .color-light {
   opacity: 0.5;
 }
-/* Benefits */
-.benefits {
-  text-align: center;
-}
-.benefits__title {
-  font-family: "Philosopher";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 48px;
-  margin-top: 80px;
-}
-.benefits__description {
-  font-family: "Montserrat-variable";
-  font-size: 12px;
-  line-height: 20px;
-  letter-spacing: 0.1em;
-  width: 57%;
-  margin: 25px auto 0px auto;
-  font-style: normal;
-}
-.benefits__description strong {
-  text-transform: uppercase;
-}
-.benefits__row {
-  display: flex;
-  flex: 1 0 calc(100% / 3);
-  margin: 40px 40px 15px 40px;
-  box-sizing: border-box;
-  overflow-x: auto;
-}
-.row__item {
-  width: 85%;
-  margin: 0 auto;
-  height: auto;
-}
-.row__item__icon {
-  width: 175px;
-}
-.row__item__subparagraph {
-  font-family: "Montserrat-variable";
-  font-size: 14px;
-  margin: 0 auto;
-  width: 90%;
-}
-.row__item__subtitle {
-  font-family: "Philosopher";
-  margin: 24px 0 18px 0;
-  font-weight: 700;
-  font-size: 32px;
-}
-.benefits__link-box {
-  margin-bottom: 85px;
-}
-.benefits__link {
-  font-family: "Montserrat";
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.1em;
-  text-decoration-line: underline;
-  text-transform: uppercase;
-  color: #000000;
-}
-@media (max-width: 992px) {
-  .benefits__title {
-    font-size: 28px;
-    margin: 40px 0 16px 0;
-  }
-  .benefits__description {
-    width: 90%;
-  }
-  .row__item {
-    flex: 1 0 50%;
-  }
-}
-@media (max-width: 768px) {
-  .row__item {
-    flex: 1 0 100%;
-    box-sizing: border-box;
-  }
-  .row__item__subparagraph {
-    width: 80%;
-  }
-  .row__item__icon {
-    width: 100px;
-  }
-  .row__item__subtitle {
-    font-size: 24px;
-    margin: 15px;
-  }
-  .benefits__link {
-    display: none;
-  }
-}
 
 .goods {
   width: 100%;
@@ -175,7 +82,7 @@
   display: flex;
   justify-content: center;
   width: auto;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 .goods__img {
   padding-left: 2rem;
@@ -311,69 +218,69 @@
 }
 
 .pricemethod-item {
-    font-size: 14px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    column-gap: 18px;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  column-gap: 18px;
 
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .pricemethod-item input:checked,
 .pricemethod-item input:not(:checked) {
-    position: absolute;
-    left: -9999px;
+  position: absolute;
+  left: -9999px;
 }
 
-.pricemethod-item input:checked+label,
-.pricemethod-item input:not(:checked)+label {
-    position: relative;
-    padding-left: 28px;
-    cursor: pointer;
-    line-height: 20px;
-    display: inline-block;
-    color: #000;
-    font-family: "Montserrat";
+.pricemethod-item input:checked + label,
+.pricemethod-item input:not(:checked) + label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #000;
+  font-family: "Montserrat";
 }
 
-.pricemethod-item input:checked+label:before,
-.pricemethod-item input:not(:checked)+label:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 18px;
-    height: 18px;
-    border: 1px solid #ddd;
-    border-radius: 100%;
-    background: #fff;
+.pricemethod-item input:checked + label:before,
+.pricemethod-item input:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  background: #fff;
 }
 
-.pricemethod-item input:checked+label:after,
-.pricemethod-item input:not(:checked)+label:after {
-    content: '';
-    width: 12px;
-    height: 12px;
-    background: #000;
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    border-radius: 100%;
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
+.pricemethod-item input:checked + label:after,
+.pricemethod-item input:not(:checked) + label:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #000;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
-.pricemethod-item input:not(:checked)+label:after {
-    opacity: 0;
-    -webkit-transform: scale(0);
-    transform: scale(0);
+.pricemethod-item input:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
 }
 
-.pricemethod-item input:checked+label:after {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
+.pricemethod-item input:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
 .text__details__num {
   width: 50px;
@@ -517,6 +424,118 @@
     height: 440px;
   }
 }
+
+/* Benefits */
+.benefits {
+  text-align: center;
+}
+.benefits__title {
+  font-family: "Philosopher";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  margin-top: 80px;
+}
+.benefits__description {
+  font-family: "Montserrat-variable";
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  width: 57%;
+  margin: 25px auto 0px auto;
+  font-style: normal;
+}
+.benefits__description strong {
+  text-transform: uppercase;
+}
+.benefits__row {
+  display: flex;
+  flex: 1 0 calc(100% / 3);
+  box-sizing: border-box;
+  margin-top: 40px;
+}
+.row__item {
+  width: 85%;
+  margin: 0 auto;
+  height: auto;
+}
+.row__item__icon {
+  width: 200px;
+  padding: 0;
+  margin: 0;
+  height: 200px;
+}
+.row__item__subparagraph {
+  font-family: "Montserrat-variable";
+  font-size: 14px;
+  margin: 0 auto;
+  width: 90%;
+  letter-spacing: 0.1em;
+}
+.row__item__subtitle {
+  font-family: "Philosopher";
+  margin: 24px 0 18px 0;
+  font-weight: 700;
+  font-size: 32px;
+}
+.benefits__link-box {
+  margin-top: 20px;
+  margin-bottom: 85px;
+}
+.benefits__link {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #000000;
+}
+@media (max-width: 992px) {
+  .benefits__title {
+    font-size: 28px;
+    margin: 40px 0 16px 0;
+  }
+  .benefits__description {
+    width: 90%;
+  }
+  .benefits__link-box {
+    display: none;
+  }
+  .owl-carousel .owl-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  .owl-carousel .owl-dots .owl-dot.active {
+    background-color: black;
+  }
+  .owl-carousel .owl-dots .owl-dot {
+    width: 10px;
+    background: #e5e2dd;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 8px;
+  }
+}
+@media (max-width: 768px) {
+  .benefits__row {
+    margin-top: 20px;
+  }
+  .row__item__subparagraph {
+    width: 80%;
+  }
+  .row__item__icon {
+    width: 120px;
+    height: 120px;
+  }
+  .row__item__subtitle {
+    font-size: 24px;
+    margin: 15px;
+  }
+}
+
 /* enjoy */
 .enjoy {
   background-color: black;
@@ -596,82 +615,191 @@
   }
 }
 /* Recipes */
-.recipes {
-  background-color: #fffbf7;
-}
-.recipes .line {
-  border-top: 1px solid #cbcbcb;
-  margin: 17px 40px 40px 40px;
-}
-.recipes__title {
-  font-family: "Montserrat";
-  font-weight: 700;
-  font-size: 12px;
-  text-align: right;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  margin: 40px 40px 17px 0;
-}
-.recipes__row {
-  display: flex;
-  border: 2px solid red;
-  overflow-x: auto;
-}
-.recipe__battle {
-  position: absolute;
-  border: 2px solid red;
-}
-.recipe {
-  display: flex;
-  flex: 1 0 80%;
-  border: 2px solid blue;
-}
-.recipe-box {
-  width: 50%;
-  border: 2px solid black;
-  background-color: #eae5dd;
+
+.special-product {
+  /* margin-top: 40px; */
+  margin-bottom: 58px;
+  background: #fffbf7;
   position: relative;
+  /* margin: 0 auto; */
 }
-.recipe__img {
-  /* width: 100%; */
-  width: auto;
-  object-fit: cover;
-  height: auto;
+.special-product .container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
 }
-.recipe__owner {
-  font-family: "Philosopher";
+.special-product__heading {
+  text-align: end;
+  font-family: "Montserrat";
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding-top: 40px;
+  margin: 0 40px 17px 0;
+}
+.horyzontal-line {
+  border-top: 1px solid #cbcbcb;
+  margin: 0 40px 40px 40px;
+}
+.slider-product {
+  display: flex;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+
+  transform: scale(1);
+  transition: transform 0.4s;
+}
+
+.slider-product-btn {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 96px;
+  height: 96px;
+  z-index: 10;
+  background: #bb6b1e;
+  border-radius: 50%;
+}
+
+.slider-product-btn-next {
+  right: 13%;
+}
+
+.slider-product-btn-prev {
+  left: 13%;
+}
+
+.slider-product-btn button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.special-product__card {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+  flex-shrink: 0;
+  /* width: 80%; */
+  transition: 0.4s all;
+}
+
+.special-product__card-content {
+  flex: 1 1 50%;
+}
+
+.special-product__card-img {
+  position: relative;
+  background: #eae5dd;
+  max-width: 560px;
+  width: 100%;
+  flex: 1 1 50%;
+}
+
+.special-product__card-img > .card-img {
+  width: 80% !important;
+}
+
+.special-product__card-img-extra {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+}
+
+.special-product__card-img-extra img {
+  width: 100%;
+  height: 100%;
+}
+
+.special-product__card-content-title h4 {
   font-size: 55px;
-  /* margin: 80px 0 40px 0; */
-  margin-bottom: 60px;
+  margin-top: 40px;
+  font-family: "Philosopher";
 }
-.recipe__ingredient {
+
+.special-product__card-content-subtitle {
+  margin-top: 40px;
   font-family: "Montserrat";
   font-size: 12px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-.recipe__types {
-  margin: 17px 0 40px 0;
+
+.special-product__card-content-list {
+  margin-top: 16px;
 }
-.recipe__view {
-  font-family: "Montserrat";
+
+.special-product__card-content-list li {
+  margin-bottom: 8px;
+  font-family: "Montserrat-variable";
   font-size: 14px;
+}
+
+.special-product__card-btn {
+  margin-top: 40px;
+}
+.special-product__card-btn .link-dark {
+  margin-top: 40px;
+  font-family: "Montserrat";
+  font-size: 12px;
   letter-spacing: 0.1em;
-  text-decoration-line: underline;
   text-transform: uppercase;
   color: black;
 }
-.recipe__description {
-  border: 2px solid yellow;
-  width: auto;
-  margin: 80px 40px;
+
+.info-pdp {
+  margin-top: 132px;
+  margin-bottom: 56px;
 }
-.recipe__type {
-  font-family: "Montserrat-variable";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 170%;
+@media (max-width: 992px) {
+  .special-product__card-img {
+    max-width: 100%;
+  }
+
+  .special-product__card-img-extra img {
+    width: 160px;
+    height: 275px;
+  }
+  .special-product__card-content-title h4 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 768px) {
+  .special-product__card-content-title h4 {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .special-product .owl-stage {
+    left: -100px;
+  }
+}
+@media (max-width: 592px) {
+  .special-product__card {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5%;
+  }
+  .horyzontal-line {
+    margin: 0 5% 40px 5%;
+  }
+  .special-product__card-img-extra img {
+    object-fit: contain;
+  }
+
+  .special-product__card-img {
+    background: transparent;
+  }
+  .special-product__heading {
+    text-align: center;
+  }
 }
 /* Rich */
 .rich {
@@ -823,6 +951,7 @@
 }
 .recommend__row {
   display: flex;
+  overflow-x: hidden;
 }
 .recommend__card {
   border-top: 1px solid #cbcbcb;
@@ -884,9 +1013,7 @@
   .card__arrow {
     display: block;
     margin: 0 20px;
-  }
-  .recommend__row {
-    overflow-x: auto;
+    cursor: pointer;
   }
   .recommend__card {
     flex: 1 0 50%;

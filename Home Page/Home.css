@@ -110,6 +110,7 @@
   flex-direction: row;
   margin-top: 70px;
   height: auto;
+  overflow-x: hidden;
 }
 .best-seller {
   display: flex;
@@ -230,19 +231,27 @@
   color: #000000;
   line-height: var(--text-line-height);
 }
-.portfolio__cart--icon {
+.owl-carousel .owl-item .portfolio__cart--icon {
   margin: 24px 0;
+  width: 15px;
 }
-.portfolio__cart--logo {
+.owl-carousel .owl-item .portfolio__cart--logo {
   margin-top: 16px;
   height: 40px;
+  width: 106px;
 }
-.ellipse__icon--row {
+.owl-carousel .owl-dots {
   display: flex;
   justify-content: center;
-  padding-bottom: 40px;
 }
-.ellipse__icon {
+.owl-carousel .owl-dots .owl-dot.active{
+  background-color: rgba(187, 107, 30, 1);
+}
+.owl-carousel .owl-dots .owl-dot {
+  width: 10px;
+  background: #e5e2dd;
+  height: 10px;
+  border-radius: 50%;
   margin: 0 8px;
 }
 /* Rich */

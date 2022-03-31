@@ -12,63 +12,27 @@ prev.addEventListener("click", () => {
   //slider.style.transform = 'translateX(0px)'
 });
 
+//********// sliders //********//
+
 
 $(document).ready(function () {
-  $(".owl-carousel").owlCarousel({
-    margin: 20,
-    dots: true,
-    slideBy: "page",
-    responsive: {
-      0: {
-        items: 1,
-        rows: 2,
-      },
-      768: {
-        items: 1,
-        rows: 2,
-      },
-      991: {
-        items: 3,
-        rows: 2,
-      },
-    },
-  });
-});
-
-$("#carousel").owlCarousel({
-  dots: true,
-  margin: 10,
-  // slideBy: 'page',
-  // stagePadding: 100,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    571: {
-      items: 2,
-    },
-    991: {
-      items: 3,
-    },
-  },
-});
-
-$("#slider-product").owlCarousel({
-  dots: true,
-  margin: 10,
-  // slideBy: 'page',
-
-  responsive: {
-    0: {
-      items: 1,
-    },
-    768: {
-      items: 1,
-      stagePadding: 100,
-    },
-    991: {
-      items: 1,
-      stagePadding: 100,
-    },
-  },
+    $('.owl-carousel').owlCarousel({
+        margin: 20,
+        dots: true,
+        slideBy: 'page',
+        responsive: {
+            0: {
+                items: 1,
+                rows: 2
+            },
+            768: {
+                items: 1,
+                rows: 2
+            },
+            991: {
+                items: 3,
+                rows: 2
+            }
+        }
+    });
 });

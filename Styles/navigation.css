@@ -65,6 +65,7 @@
 }
 .nav__hamburger {
   display: none;
+  cursor: pointer;
 }
 .nav__logo-link {
   z-index: 9999;

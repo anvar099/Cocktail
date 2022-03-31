@@ -1,27 +1,74 @@
-const detailsAccordion = document.querySelectorAll(
-  ".product-details__accordion-btn"
-);
-const faqAccordion = document.querySelectorAll(".faq__accordion-btn");
+const prevBtn = document.getElementById("prev-btn");
+const nextBtn = document.getElementById("next-btn");
+const sliderSeller = document.getElementById("slider-seller");
 
-function accordion(accordionElement) {
-  accordionElement.forEach((accordion) => {
-    accordion.onclick = function () {
-      this.classList.toggle("is-open");
+nextBtn.addEventListener("click", () => {
+  sliderSeller.append(sliderSeller.firstElementChild);
+});
 
-      let content = this.nextElementSibling;
-      console.log(content);
+prevBtn.addEventListener("click", () => {
+  sliderSeller.prepend(sliderSeller.lastElementChild);
+});
 
-      if (!this.classList.contains("is-open")) {
-        //this is if the accordion is open
-        content.classList.remove("is-accordion-open");
-      } else {
-        //if the accordion is currently closed
-        content.classList.add("is-accordion-open");
-      }
-    };
+
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel({
+    margin: 20,
+    dots: true,
+    slideBy: "page",
+    responsive: {
+      0: {
+        items: 1,
+        rows: 2,
+      },
+      768: {
+        items: 1,
+        rows: 2,
+      },
+      991: {
+        items: 3,
+        rows: 2,
+      },
+    },
   });
-}
+});
 
-accordion(detailsAccordion);
+$("#carousel").owlCarousel({
+  dots: true,
+  slideBy: "page",
+  // stagePadding: 100,
+  responsive: {
+    0: {
+      items: 1,
+      rows: 2,
+    },
+    768: {
+      items: 1,
+      rows: 2,
+    },
+    991: {
+      items: 3,
+      rows: 2,
+    },
+  },
+});
 
-accordion(faqAccordion);
+$("#slider-product").owlCarousel({
+  dots: true,
+  margin: 10,
+  // slideBy: 'page',
+
+  responsive: {
+    0: {
+      items: 1,
+    },
+    768: {
+      items: 1,
+      stagePadding: 100,
+    },
+    991: {
+      items: 1,
+      stagePadding: 100,
+    },
+  },
+});
